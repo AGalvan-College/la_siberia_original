@@ -164,7 +164,7 @@ header .main-nav li a, header .right-nav li a{
     url("../img/store-front.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: 50% 25%;
 }
 
 .hero-text {
