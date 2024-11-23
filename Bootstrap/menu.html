@@ -1,127 +1,166 @@
-<!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>jQuery</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Siberia Menu</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+	
+        body {
+            background-color: #800000; /* Background color */
+        }
+        .menu-section {
+            margin-bottom: 30px;
+        }
+        .menu-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #FFFF00; /* Change this to your desired color for the title */
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            color: #FFFF00; /* Change this to your desired color for the menu items */
+        }
+    </style>
+</head>
 
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="apple-touch-icon" href="icon.png">
-        <!-- Place favicon.ico in the root directory -->
-        <link rel="shortcut icon" href="favicon.ico">
-        
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="fonts/font.css"> <!-- Font face CSS link -->
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/styles.css">
-        
-        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+<body>
 
-        
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-WRXRCY8L74"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+<div class="container">
+    <h1 class="text-center my-4" style="color: #FFFF00;">Menú</h1> <!-- Yellow color -->
 
-          gtag('config', 'G-WRXRCY8L74');
-        </script>
-        
-    </head>
-    <body>
-        <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
+    <div class="menu-section">
+        <div class="menu-title">Para Empezar</div>
+        <div class="menu-item"><span>Frijoles Charros</span><span>$3.99</span></div>
+        <div class="menu-item"><span>Frijoles Especiales <em> (Bistec, Queso Fresco y Aguacate)</em></span><span>$4.99</span></div>
+        <div class="menu-item"><span>Cueritos</span><span>$4.99</span></div>
+        <div class="menu-item"><span>Cebolla Habaneras</span><span>$4.50</span></div>
+        <div class="menu-item"><span>Guacamole</span><span>$6.99</span></div>
+        <div class="menu-item"><span>Quesadillas</span><span>$5.99</span></div>
+        <div class="menu-item"><span>Choriquesadillas</span><span>$6.99</span></div>
+        <div class="menu-item"><span>Panchos <em>(Chips bañados con Frijoles Refritos, Queso Mozzarella y Carne Pirata acompañados de rebanadas de Aguacate)</em> </span><span>$13.99</span></div>
+        <div class="menu-item"><span>Ensalada de Cueritos</span><span>$6.99</span></div>
+    </div>
 
-        <div id="mobilenav_id" class="mobile-nav"></div>
-        
-        <!-- Add your site or application content here -->
-        <main>
-            
-            <header id="header_id">
-                
-            </header>
-            
-            <section id="hero">
-                <div class="container">
+    <div class="menu-section">
+        <div class="menu-title">Empanadas de Maíz</div>
+        <div class="menu-item"><span>Queso (3)</span><span>$6.99</span></div>
+        <div class="menu-item"><span>Vegetales (3)</span><span>$7.75</span></div>
+    </div>
 
-                </div>
-            </section>
+    <div class="menu-section">
+        <div class="menu-title">Caldos</div>
+        <div class="menu-item"><span>Caldo de Pollo <em>(Calabaza, Zanahoria, Papa, Repollo, Pierna y Muslo con Arroz y (3) Tortillas)</em></span><span>$9.99</span></div>
+        <div class="menu-item"><span>Caldo Tlalpeño <em>(Arroz, Pechuga de Pollo, Calabaza, Zanahoria, GarbanzoQueso Mozzarella y Aguacate) </em></span><span>$9.99</span></div>
+    </div>
 
-           
-            <section>
-                <div id="categories">
-                    <div class="sidenav-section">
-                        <h3>MENU</h3>
-                        <hr>
-                        <div class="sidenav">
-                            <ul>
-                                <li>ALL CATEGORIES</li>
-                                <li>TACO</li>
-                            </ul>
-                        </div>
-                    </div>
+    <div class="menu-section">
+        <div class="menu-title">Taco Siberia</div>
+        <div class="menu-item"><span>Taco de Pollo</span><span>$6.25</span></div>
+        <div class="menu-item"><span>Taco de Pollo Mix</span><span>$6.50</span></div>
+        <div class="menu-item"><span>Taco de Pechuga</span><span>$6.99</span></div>
+        <div class="menu-item"><span>Taco de Deshebrada</span><span>$6.99</span></div>
+        <div class="menu-item"><span>Taco de Carnitas <em>(Carne, Guacamole y Crema) </em></span><span>$6.99</span></div>
+        <div class="menu-item"><span>Taco Emolado</span><span>$7.50</span></div>
+        <div class="menu-item"><span>Taco Entomatado <em>(Con Frijoles, Lechuga y Tomate) </em></span><span>$7.50</span></div>
+        <div class="menu-item"><span>Taco Poblano</span><span>$7.99</span></div>
+        <div class="menu-item"><span>Taco Chipotle</span><span>$7.99</span></div>
+    </div>
 
-                <div class="full-menu">
-                    <div class="container">
-                    <h2 style="text-align: center;"><b>La Siberia Original </b></h2>
+    <div class="menu-section">
+        <div class="menu-title">Tostada Siberia</div>
+        <div class="menu-item"><span>Tostada de Pollo</span><span>$7.50</span></div>
+        <div class="menu-item"><span>Tostada de Pechuga</span><span>$7.99</span></div>
+        <div class="menu-item"><span>Tostada Mix</span><span>$7.99</span></div>
+        <div class="menu-item"><span>Tostada de Carnitas</span><span>$9.99</span></div>
+        <div class="menu-item"><span>Tostada de Deshebrada <em>(Frijoles, Carne, Lechuga, Tomare, Aguacate, Crema y Queso Fresco) </em></span><span>$9.99</span></div>
+        <div class="menu-item"><span>Tostada Pirata <em>(Frijoles, Queso Mozzarella, Fajita, Tocino, Salchicha, Lechuga y un poco de Guacamole) </em></span><span>$13.99</span></div>
+    </div>
 
-                    <div class="blog-posts">
+    <div class="menu-section">
+        <div class="menu-title">Órdenes</div>
+        <div class="menu-item"><span>Orden de Flautas (5)</span><span>$7.99</span></div>
+        <div class="menu-item"><span>Flautas Especiales (5)</span><span>$8.99</span></div>
+        <div class="menu-item"><span>Orden De Pollo en Mole <em>(Pierna y Muslo bañado en Mole Casero acompañado de Frijoles, Arroz y (4) Tortillas de maíz.) </em></span><span>$10.99</span></div>
+    </div>
 
-                        <div class="blog-post">
-                            <img src="img/blog-img/blog1.jpg" srcset="img/blog-img/blog1.jpg 1x, img/blog-img/blog1@2x.jpg 2x" alt="Blog post Racing Club">
-                            <p class="blog-post-date">Food name 1</p>
-                        </div>
+    <div class="menu-section">
+        <div class="menu-title">Huaraches</div>
+        <div class="menu-item"><span>Huarache Regular<em> (De Maíz Grande con frijol, Carne deshebrada, lechuga, Tomate, Aguacate, Queso Fresco y Crema.) </em></span><span>$8.99</span></div>
+        <div class="menu-item"><span>Huarache Especial<em> (De Maíz Grande con frijol, Queso Mozzarella, mitad carne Deshebrada y mitad de chicharrón prensado<br> (puerco), lechuga, Tomate, Aguacate, Queso Fresco y Crema) </em></span><span>$9.99</span></div>
+        <div class="menu-item"><span>Huarache Siberia<em> (De Maíz con Pechuga de pollo, Frijoles, Queso Mozzarella,Lechuga, Queso Fresco, Tomate, Aguacate, y Crema) </em></span><span>$9.99</span></div>
+    </div>
 
-                        <div class="blog-post">
-                            <img src="img/blog-img/blog2.jpg" srcset="img/blog-img/blog2.jpg 1x, img/blog-img/blog2@2x.jpg 2x" alt="Blog post Racing Club">
-                            <p class="blog-post-date">Food name 2</p>
-                        </div>
+    <div class="menu-section">
+        <div class="menu-title">Piratas</div>
+        <div class="menu-item"><span>Piratas (4) <em>(Tortillas hechas a mano, Fajita de res, Queso Mozzarella, Tocino, Salchicha, Cebolla y Cilantro. Acompañados de Cebolla Asada.)</em></span><span>$8.99</span></div>
+        <div class="menu-item"><span>Chuletaco (4) <em>(Tortillas hechas a mano, CarneDe Puerco con Quezo MozzarellaAcompañados de Cebolla Asada.) </em></span><span>$8.50</span></div>
+        <div class="menu-item"><span>Tacos de Carnitas (4)<em>(Tortillas hechas a mano, CarnitasDe Puerco, Cebolla, CilantroAcompañados de Cebolla Asada.) </em></span><span>$8.50</span></div>
+    </div>
 
-                        <div class="blog-post">
-                            <img src="img/blog-img/blog3.jpg" srcset="img/blog-img/blog3.jpg 1x, img/blog-img/blog3@2x.jpg 2x" alt="Blog post Racing Club">
-                            <p class="blog-post-date">Food name 3</p>
-                        </div>
+    <div class="menu-section">
+        <div class="menu-title">Tacos de Harina</div>
+        <div class="menu-item"><span>Pirata Especial<em> (Frijol, Queso Mozzarella, Guacamole, Fajita, Tocino, Salchicha, y Lechuga.) </em></span><span>$8.99</span></div>
+        <div class="menu-item"><span>Gringa<em> (Queso Mozzarella, Pastor, Cebolla, CilantroAcompañados de Cebolla Asada.) </em></span><span>$8.99</span></div>
+        <div class="menu-item"><span>Burrito Especial<em> (Pechuga de Pollo, Frijoles Charros, Arroz, Lechuga, GuacamolAcompañados de Cebolla Asada.) </em></span><span>$10.99</span></div>
+        <div class="menu-item"><span>Deshebrada<em> (Carne Deshebrada, Lechuga, Tomate, Aguacate, y Queso Fresco.) </em></span><span>$9.75</span></div>
+        <div class="menu-item"><span>Taco de Chicharrón Prensado<em> (Chicharrón prensado, Lechuga, Tomate, Aguacate y Queso Fresco.) </em></span><span>$9.25</span></div>
+    </div>
 
-                        <div class="blog-post">
-                            <img src="img/blog-img/blog4.jpg" srcset="img/blog-img/blog4.jpg 1x, img/blog-img/blog4@2x.jpg 2x" alt="Blog post Racing Club">
-                            <p class="blog-post-date">Food name 4</p>
-                            
-                        </div>
+    <div class="menu-section">
+        <div class="menu-title">Tacos (4)</div>
+        <div class="menu-item"><span>Pastor<em> (Con Cebolla, Cilantro, Aguacate y Queso. Acompañados de Cebolla Asada.) </em></span><span>$7.25</span></div>
+        <div class="menu-item"><span>Chicharron</span><span>$7.25</span></div>
+        <div class="menu-item"><span>Chorizo</span><span>$6.47</span></div>
+        <div class="menu-item"><span>Chuleta<em> (Con Cebolla, Cilantro, Acompañados de Cebolla Asada.) </em></span><span>$7.25</span></div>
+    </div>
 
-                        <div class="blog-post">
-                            <img src="img/blog-img/blog5.jpg" srcset="img/blog-img/blog5.jpg 1x, img/blog-img/blog5@2x.jpg 2x" alt="Blog post Racing Club">
-                            <p class="blog-post-date">Food name 5</p>
-                            
-                        </div>
+    <div class="menu-section">
+        <div class="menu-title">Tortas</div>
+        <div class="menu-item"><span>La de Chuleta</span><span>$9.25</span></div>
+        <div class="menu-item"><span>La de Pastor</span><span>$9.25</span></div>
+        <div class="menu-item"><span>La de Carnitas<em> (Frijoles, Cebolla y Cilantro.) </em></span><span>$8.99</span></div>
+        <div class="menu-item"><span>La de Pollo<em> (Frijoles, Lechuga, Tomate, Aguacate y Queso Fresco.) </em></span><span>$8.99</span></div>
+        <div class="menu-item"><span>Torta Especial<em> (Frijoles, Queso Mozzarella, Chicharrón Prensado, Carne Pirata, Lechuga, Queso Frescoy poco Guacamole) </em></span><span>$10.99</span></div>
+    </div>
 
-                        <div class="blog-post">
-                            <img src="img/blog-img/blog6.jpg" srcset="img/blog-img/blog6.jpg 1x, img/blog-img/blog6@2x.jpg 2x" alt="Blog post Racing Club">
-                            <p class="blog-post-date">Food name 6</p>
-                            
-                        </div>
+    <div class="menu-section">
+        <div class="menu-title">Bebidas</div>
+        <div class="menu-item"><span>Agua de Limon</span><span>$3.25 / $4.00</span></div>
+        <div class="menu-item"><span>Agua de Horchata</span><span>$3.00 / $3.75</span></div>
+        <div class="menu-item"><span>Agua de Tamarindo</span><span>$3.00 / $3.75</span></div>
+        <div class="menu-item"><span>Agua de Jamaica</span><span>$3.00 / $3.75</span></div>
+        <div class="menu-item"><span>Topo Chico de Sabores</span><span>$3.00</span></div>
+        <div class="menu-item"><span>Coca Cola Mexicana</span><span>$3.00</span></div>
+        <div class="menu-item"><span>Coca Cola</span><span>$2.00</span></div>
+        <div class="menu-item"><span>Diet Coke</span><span>$2.00</span></div>
+        <div class="menu-item"><span>Coca Zero</span><span>$2.00</span></div>
+        <div class="menu-item"><span>Dr. Pepper</span><span>$2.00</span></div>
+        <div class="menu-item"><span>Sprite</span><span>$2.00</span></div>
+    </div>
 
-                    </div>
+    <div class="menu-section">
+        <div class="menu-title">Extras</div>
+        <div class="menu-item"><span>Crema</span><span>$1.25</span></div>
+        <div class="menu-item"><span>Salsa</span><span>$1.25</span></div>
+        <div class="menu-item"><span>Limones</span><span>$1.25</span></div>
+        <div class="menu-item"><span>Jalapeños</span><span>$1.25</span></div>
+    </div>
 
-                </div>
-                </div>
-                </div>
-            </section>
-            
-            <br>
-            <footer>
-                <div id="footer_id" class="container"></div>
-            </footer>
+    <div class="menu-section">
+        <div class="menu-title">Dessert</div>
+        <div class="menu-item"><span>Flan</span><span>$4.00</span></div>
+        <div class="menu-item"><span>Choco Flan</span><span>$4.00</span></div>
+        <div class="menu-item"><span>Cheese Cake</span><span>$4.00</span></div>
+        <div class="menu-item"><span>Manzanas de Tamarindo</span><span>$4.50</span></div>
+    </div>
+</div>
 
-        </main>
-
-    </body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
